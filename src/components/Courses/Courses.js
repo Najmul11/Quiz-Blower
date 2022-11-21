@@ -6,8 +6,8 @@ import './Courses.css'
 const Courses = ({course}) => {
     const {id, name, logo, total}=course
     return (
-        <div className='col-sm-12 col-md-6 col-lg-3 px-5  py-3'>
-            <Card className='bg-dark text-white border-0 px-5  py-5'>
+        <div className='col-sm-12 col-md-6 col-lg-3 px-5 px-md-4 px-lg-3  py-2'>
+            <Card className='bg-dark text-white border-0 px-5 px-lg-3 py-5'>
                 <Card.Img variant="top" src={logo}/>
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
