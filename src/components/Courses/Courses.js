@@ -16,7 +16,7 @@ const Courses = ({course}) => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer className='p-0 link-text'>
-                    <Link to='/jiii' className=''>
+                    <Link to='/jiii'>
                         <button className='w-100 fw-semibold  py-2 border-0 rounded-1 d-flex justify-content-between align-items-center'>
                             Start practice <HiArrowRight/>
                         </button>
