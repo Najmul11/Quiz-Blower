@@ -1,0 +1,9 @@
+.card-img{
+    height: 380px;
+}
+#goldenrod{
+    background-color: #daa520;
+}
+.highlight{
+    color: goldenrod;
+}
