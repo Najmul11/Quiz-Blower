@@ -12,7 +12,6 @@ const Questions = ({allQuestion}) => {
             position: toast.POSITION.TOP_RIGHT
           });
     }
-    console.log(allQuestion);
     return (
         <div className='col-12 col-md-8 mx-auto p-0 my-3 shadow-sm  rounded'>
             <Card className='bg-white position-relative border-0'>
@@ -22,7 +21,7 @@ const Questions = ({allQuestion}) => {
                     <Card.Title className='py-5'>{question}</Card.Title>
                     <div className='row g-2'>
                         {
-                            options.map(option=><Options key={id} options={option}></Options>)
+                            options.map(option=><Options key={option} options={option} correctAnswer={correctAnswer}></Options>)
                         }
                     </div>
                 </Card.Body>

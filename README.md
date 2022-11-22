@@ -7,6 +7,7 @@
   + Rechart to show stats
   + React bootstrap
   + React icons
+  + React toast
 
 
 
