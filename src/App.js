@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, useParams } from 'react-router-dom';
 import Blog from './components/Blog/Blog';
 import Error from './components/Error/Error';
-import Home from './components/Home/Home';
+import Topics from './components/Topics/Topics';
 import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Main from './layouts/Main';
@@ -16,13 +16,13 @@ function App() {
         {
           path:'/',
           loader:dataLoader,
-          element:<Home></Home>
+          element:<Topics></Topics>
         },
 
         {
-          path:'/home',
+          path:'/Topics',
           loader:dataLoader,
-          element:<Home></Home>
+          element:<Topics></Topics>
         },
         {
           path:'quiz/:id',

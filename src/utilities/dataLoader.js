@@ -7,7 +7,7 @@ const dataLoader=async()=>{
 const dynamicDataLoader=async({params})=>{
             const quizData=await fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
             const resData=await quizData.json()
-              return resData.data.questions ;
+              return resData.data ;
 }
 export {
     dataLoader,

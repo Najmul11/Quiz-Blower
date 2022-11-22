@@ -4,9 +4,9 @@ import Courses from '../Courses/Courses';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import img1 from '../../images/sub-3.jpg'
-import './Home.css'
+import './Topics.css'
 
-const Home = () => {
+const Topics = () => {
     const courses=useLoaderData()
     return (
        <>
@@ -38,4 +38,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Topics;

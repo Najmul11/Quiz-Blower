@@ -14,7 +14,7 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className="mx-auto text-start">
-                        <NavLink to='/home'>Home</NavLink>
+                        <NavLink to='/topics'>Topics</NavLink>
                         <NavLink to='/statistics'>Statistics</NavLink>
                         <NavLink to='/blog'>Blog</NavLink> 
                     </Nav>
