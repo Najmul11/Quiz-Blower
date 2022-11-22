@@ -10,16 +10,19 @@ const Options = ({options, correctAnswer}) => {
     const handleAnswer = (e) =>{
         if (e.target.textContent===correctAnswer) {
             setIsCorrect('You are right')
+            toast.success(isCorrect, {
+                position: toast.POSITION.TOP_RIGHT
+              });
         }else{
             setIsCorrect('You are wrong')
+            toast.error(isCorrect, {
+                position: toast.POSITION.TOP_RIGHT
+             });
         }
-        toast.info(isCorrect, {
-            position: toast.POSITION.TOP_RIGHT
-          });
+        
     }
     return (
         <>
-            {/* {isCorrect ? 'hii': 'bye'} */}
             <div onClick={handleAnswer} className='col-12 col-md-6 '>
                 <ToastContainer  toastClassName='shadow-sm'/>
                 <div className="p-3 border  h-100 d-flex justify-content-center align-items-center option">{options}</div>
