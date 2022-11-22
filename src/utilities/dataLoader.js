@@ -3,4 +3,13 @@ const dataLoader=async()=>{
     const data= await fetchedData.json()
     return data.data;
 }
-export default dataLoader;
+// dynamic data load 
+const dynamicDataLoader=async({params})=>{
+            const quizData=await fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+            const resData=await quizData.json()
+              return resData.data.questions ;
+}
+export {
+    dataLoader,
+    dynamicDataLoader
+}

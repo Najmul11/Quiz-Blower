@@ -1,10 +1,11 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, useParams } from 'react-router-dom';
 import Blog from './components/Blog/Blog';
 import Error from './components/Error/Error';
 import Home from './components/Home/Home';
+import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Main from './layouts/Main';
-import dataLoader from './utilities/dataLoader';
+import {  dataLoader, dynamicDataLoader } from './utilities/dataLoader';
 
 function App() {
   const router=createBrowserRouter([
@@ -22,6 +23,11 @@ function App() {
           path:'/home',
           loader:dataLoader,
           element:<Home></Home>
+        },
+        {
+          path:'quiz/:id',
+          loader:dynamicDataLoader,
+          element:<Quiz></Quiz>
         },
         {
           path:'/statistics',
